@@ -45,13 +45,13 @@ int altaAlquileres(eAlquileres lista[], int tam, int* pId)
 
             printf("Codigo: %d\n",nuevoAlquileres.codigo);
 
-            if(!utn_getUnsignedInt("Ingrese el codigo del juego: ","Error. ",0,3,500,504,4,&nuevoAlquileres.idJuego))
+            if(!utn_getUnsignedInt("Ingrese el codigo del juego: ","Error. ",0,4,500,504,4,&nuevoAlquileres.idJuego))
             {
                 printf("Error al cargar el id de juego.\n");
                 return 0;
             }
 
-            if(!utn_getUnsignedInt("Ingrese el codigo del Cliente: ","Error. ",0,3,500,504,4,&nuevoAlquileres.idCliente))
+            if(!utn_getUnsignedInt("Ingrese el codigo del Cliente: ","Error. ",0,4,500,504,4,&nuevoAlquileres.idCliente))
             {
                 printf("Error al cargar el id de Cliente.\n");
                 return 0;
